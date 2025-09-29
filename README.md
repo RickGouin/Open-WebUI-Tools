@@ -12,7 +12,11 @@ Open-WebUI tools are **extensions or plugins** that connect the AI model to exte
 - Run **custom scripts or code**  
 - Access **third-party services** like Google Drive, Slack, or Notion  
 
-Think of them as the apps or plugins of the Open-WebUI ecosystem.  
+Think of them as the apps or plugins of the Open-WebUI ecosystem.
+
+Below is a sample screenshot, using the Ping tool from this repo.  The tool executes a ping and then provides the results, performing troubleshooting if necessary.
+
+![Screenshot of ping tool](/images/tools3.png)
 
 
 ## 🛠️ Installation
@@ -43,24 +47,26 @@ Once installed, you can enable your tool by starting a new chat.  Click "Integra
 
 You can also have it automatically selected on a model by model basis.  Go into Admin Panel -> Settings -> Models.  Choose a model and click the small pen edit button.  Scroll down and place a checkmark next to the tools you want automatically included.
 
+![Screenshot of OpenWebUI Model Configuration](/images/tools2.png)
+
 ## 📖 Tool Listing
 This repository currently contains the following tools.  I hope to add more over time.
 1. **Stock Prices**  
 This tool can retrieve stock price information by ticker symbol.  
 Usage:  
 *Quotes:*  
-    - GET stock_quote symbol=[symbol]  
-    - Run stock_quote for [symbol]  
+- GET stock_quote symbol=[symbol]  
+- Run stock_quote for [symbol]  
 
 *History (with options):*  
-    - stock_history symbol=[symbol] period=1mo interval=1d  
-    - stock_history symbol=[symbol] period=1d interval=1m rows=60  
+- stock_history symbol=[symbol] period=1mo interval=1d  
+- stock_history symbol=[symbol] period=1d interval=1m rows=60  
 
 *Parameters & valid values:*  
-    - symbol (required): a ticker like AAPL, MSFT, TSLA, or an index like ^GSPC.  
-    - period (history): one of 1d, 5d, 1mo, 3mo, 6mo, 1y, max. Default 5d.  
-    - interval (history): one of 1m, 2m, 5m, 15m, 30m, 60m, 1d, 1wk, 1mo. Default 30m.  
-    - rows (history): how many rows to show (overrides the default valve).  
+- symbol (required): a ticker like AAPL, MSFT, TSLA, or an index like ^GSPC.  
+- period (history): one of 1d, 5d, 1mo, 3mo, 6mo, 1y, max. Default 5d.  
+- interval (history): one of 1m, 2m, 5m, 15m, 30m, 60m, 1d, 1wk, 1mo. Default 30m.  
+- rows (history): how many rows to show (overrides the default valve).  
 
 2. **Flight Info**  
 This tool can retrieve flight information by flight number.  
