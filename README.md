@@ -39,6 +39,8 @@ Think of them as the apps or plugins of the Open-WebUI ecosystem.
 
 Once installed, you can enable your tool by starting a new chat.  Click "Integrations" in your chat window.  This will open a "tools" window where you can enable your various installed tools.
 
+![Screenshot of OpenWebUI Tool Selection](/images/tools1.png)
+
 You can also have it automatically selected on a model by model basis.  Go into Admin Panel -> Settings -> Models.  Choose a model and click the small pen edit button.  Scroll down and place a checkmark next to the tools you want automatically included.
 
 ## 📖 Tool Listing
@@ -59,7 +61,7 @@ Usage:
     - period (history): one of 1d, 5d, 1mo, 3mo, 6mo, 1y, max. Default 5d.  
     - interval (history): one of 1m, 2m, 5m, 15m, 30m, 60m, 1d, 1wk, 1mo. Default 30m.  
     - rows (history): how many rows to show (overrides the default valve).  
-    
+
 2. **Flight Info**  
 This tool can retrieve flight information by flight number.  
 Usage:  
