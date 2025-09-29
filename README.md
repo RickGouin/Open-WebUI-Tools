@@ -49,14 +49,17 @@ Usage:
 *Quotes:*  
     - GET stock_quote symbol=[symbol]  
     - Run stock_quote for [symbol]  
+
 *History (with options):*  
     - stock_history symbol=[symbol] period=1mo interval=1d  
     - stock_history symbol=[symbol] period=1d interval=1m rows=60  
+
 *Parameters & valid values:*  
     - symbol (required): a ticker like AAPL, MSFT, TSLA, or an index like ^GSPC.  
     - period (history): one of 1d, 5d, 1mo, 3mo, 6mo, 1y, max. Default 5d.  
     - interval (history): one of 1m, 2m, 5m, 15m, 30m, 60m, 1d, 1wk, 1mo. Default 30m.  
     - rows (history): how many rows to show (overrides the default valve).  
+    
 2. **Flight Info**  
 This tool can retrieve flight information by flight number.  
 Usage:  
