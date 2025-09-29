@@ -44,6 +44,12 @@ Once installed, you can enable your tool by starting a new chat.  Click "Integra
 
 The tools will have different syntax to execute them.  For example, the Ping tool in this repository is used like this:  USE PING [hostname].
 
+## 📖 Tool Listing
+This repository currently contains the following tools.  I hope to add more over time.
+1. ** Stock Prices ** This tool can retrieve stock price information by ticker symbol.
+2. ** Flight Info **  This tool can retrieve flight information by flight number.
+3. ** Ping Tool ** This tool can send pings from your Open-WebUI server to other servers.  It will automatically explain/diagnose problems.
+4. ** Weather ** This tool can get weather and forecast information by zip code.
 
 ## 📜 License
 
